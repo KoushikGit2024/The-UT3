@@ -27,6 +27,4 @@ This project is built using **HTML, CSS, and JavaScript**.
 │── index.html
 │── style.css
 │── javaScript.js
-│── SS.png  
-|── Recording.gif
 │── README.md
