@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate_Tic_Tac_Tow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pageCover">
+
+        <div id="welcomeTag">
+            <p id="welcomeText">
+                Welcome To The Game World of Koushik
+                <br>
+                Mega Tic-Tac-Tow
+            </p>
+        </div>
+        <div class="blurGlass">
+            <table id="example" border="1px">
+                <tr>
+                    <td class="exMBlock">
+                        <table class="exSTable" border="1px" >
+                            <tr>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock">O</td>
+                            </tr>
+                            <tr>
+                                <td class="exSBlock"></td>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock">X</td>
+                            </tr>
+                            <tr>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock"></td>
+                                <td class="exSBlock">O</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="exMBlock">
+                        <div class="exOwnTable">X</div>
+                    </td>
+                    <td class="exMBlock">
+                        <table class="exSTable" border="1px">
+                            <tr>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock">X</td>
+                            </tr>
+                            <tr>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock"></td>
+                            </tr>
+                            <tr>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock">X</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exMBlock">
+                        <div class="exOwnTable">O</div>
+                    </td>
+                    <td class="exMBlock">
+                        <table class="exSTable" border="1px">
+                            <tr>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock">X</td>
+                            </tr>
+                            <tr>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock"></td>
+                                <td class="exSBlock">X</td>
+                            </tr>
+                            <tr>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="exMBlock">
+                        <div class="exOwnTable">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exMBlock">
+                        <div class="exOwnTable">X</div>
+                    </td>
+                    <td class="exMBlock">
+                        <table class="exSTable" border="1px">
+                            <tr>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock"></td>
+                            </tr>
+                            <tr>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock">O</td>
+                            </tr>
+                            <tr>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock"></td>
+                                <td class="exSBlock"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="exMBlock">
+                        <table class="exSTable" border="1px">
+                            <tr>
+                                <td class="exSBlock"></td>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock">O</td>
+                            </tr>
+                            <tr>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock">X</td>
+                                <td class="exSBlock"></td>
+                            </tr>
+                            <tr>
+                                <td class="exSBlock"></td>
+                                <td class="exSBlock">O</td>
+                                <td class="exSBlock"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <aside id="tutorial">
+                <a href="https://www.youtube.com/embed/_Na3a1ZrX7c" id="trlLink" target="_blank">Don't know how to play? watch the tutorial -></a>
+            </aside>
+        </div>
+        <button id="secondPage">
+            <pre>Ready to play 
+let's Go</pre>
+        </button>
+    </div>    
+    
+    <div id="inputPage">
+        <form id="inputForm" name="inpFrom" action="#" onsubmit="myFunc();">
+            <fieldset>
+                <legend><p id="plInfo">Players' Information</p></legend>
+                <table id="">
+                    <tr>
+                        <td>
+                            <label for="fname">First Player Name:&nbsp;</label>
+                        </td>
+                        <td>
+                            <input type="text" name="fname" id="fname" placeholder="Get's First Move" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fsymbol">First Player's Symbol:&nbsp;</label>
+                        </td>
+                        <td>
+                            <select name="fsymbol" id="fsymbol">
+                                <option value="@">@</option>
+                                <option value="#">#</option>
+                                <option value="X">X</option>
+                                <option value="O">O</option>
+                                <option value="$">$</option>
+                                <option value="%">%</option>
+                                <option value="&">&</option>
+                                <option value="*">*</option>
+                                <option value="♠">♠</option>
+                                <option value="♣">♣</option>
+                                <option value="♦">♦</option>
+                                <option value="♥">♥</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sname">Second Player Name:&nbsp;</label>
+                        </td>
+                        <td>
+                            <input type="text" name="sname" id="sname" placeholder="Get's Time To Analyse" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ssymbol">Second Player's Symbol:&nbsp;</label>
+                        </td>
+                        <td>
+                            <select name="ssymbol" id="ssymbol">
+                                <option value="#">#</option>
+                                <option value="@">@</option>
+                                <option value="X">X</option>
+                                <option value="O">O</option>
+                                <option value="$">$</option>
+                                <option value="%">%</option>
+                                <option value="&">&</option>
+                                <option value="*">*</option>
+                                <option value="♠">♠</option>
+                                <option value="♣">♣</option>
+                                <option value="♦">♦</option>
+                                <option value="♥">♥</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <button id="submitInfo" name="submit" onclick="myFunc();">SUBMIT</button>
+        </form>
+    </div>
+     
+    <div id="mainPage">
+        <div id="neonBlock">
+        </div>
+        <div id="holdingBlock">
+            <div id="nameShower"></div>
+            <table id="tempTable">
+                <tr>
+                    <td class="tempBlock access" aria-rowindex="1"></td>
+                    <td class="tempBlock access" aria-rowindex="1"></td>
+                    <td class="tempBlock access" aria-rowindex="1"></td>
+                </tr>
+                <tr>
+                    <td class="tempBlock access" aria-rowindex="1"></td>
+                    <td class="tempBlock access" aria-rowindex="1"></td>
+                    <td class="tempBlock access" aria-rowindex="1"></td>
+                </tr>
+                <tr>
+                    <td class="tempBlock access" aria-rowindex="1"></td>
+                    <td class="tempBlock access" aria-rowindex="1"></td>
+                    <td class="tempBlock access" aria-rowindex="1"></td>
+                </tr>
+            </table>
+            <table id="MTable" border="5vh">
+                <tr>
+                    <td class="MBlock" aria-colindex="0">
+                        <div class="ownedBlock"></div>
+                        <table class="STable">
+                            <tbody>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="MBlock" aria-colindex="1">
+                        <div class="ownedBlock"></div>
+                        <table class="STable">
+                            <tbody>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="MBlock" aria-colindex="2">
+                        <div class="ownedBlock"></div>
+                        <table class="STable">
+                            <tbody>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="MBlock" aria-colindex="3">
+                        <div class="ownedBlock"></div>
+                        <table class="STable">
+                            <tbody>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="MBlock" aria-colindex="4">
+                        <div class="ownedBlock"></div>
+                        <table class="STable">
+                            <tbody>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="MBlock" aria-colindex="5">
+                        <div class="ownedBlock"></div>
+                        <table class="STable">
+                            <tbody>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="MBlock" aria-colindex="6">
+                        <div class="ownedBlock"></div>
+                        <table class="STable">
+                            <tbody>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="MBlock" aria-colindex="7">
+                        <div class="ownedBlock"></div>
+                        <table class="STable">
+                            <tbody>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="MBlock" aria-colindex="8">
+                        <div class="ownedBlock"></div>
+                        <table class="STable">
+                            <tbody>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                    <td class="SBlock"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="endGame">
+        <div id="winner">
+            <i class="fa-solid fa-trophy"></i>
+            <div id="statement" style="display: inline;">
+            </div>
+            <i class="fa-solid fa-champagne-glasses"></i>
+        </div>
+        <form><button id="replay" onclick="location.reload()">Replay --></button></form>
+    </div>
+    <script src="javaScript.js"></script>
+</body>
+</html>

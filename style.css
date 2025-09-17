@@ -1,0 +1,334 @@
+body{
+    background: #000;
+    padding: 0;
+    margin: 0;
+}
+#pageCover{
+    background: url('https://www.thespruce.com/thmb/vfpvoVhLdrau5xbacKUh-x6xsUg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/pictures-of-purple-flowers-4061771-05-8b125acb27914c819181c5c0da7fc110_1-4c0689dd22014d678e585be34c79445a.jpg');
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+#welcomeText{
+    font-family:'Times New Roman';
+    font-size: 2rem;
+    color: chartreuse;
+}
+.blurGlass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    border: 2px rgb(127, 123, 123) solid;
+    border-radius: 1rem;
+    border-color: rgb(116, 106, 106);
+    padding: 2rem;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur;
+    height: 65vh;
+    width: 65vh;
+}
+.blurGlass:hover,.exSBlock:hover,.exOwnTable:hover{
+    transition: all 1s ease-in-out 0s;
+    transform: translate(-5px,-2.5px);
+    box-shadow: 10px 5px 5px rgb(45, 42, 42);
+}
+#welcomeTag{
+    display: inline;
+} 
+#example{
+    border: 1vh solid cornflowerblue;
+    border-radius: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.exMBlock{
+    background-color: antiquewhite;
+    min-height: 20vh;
+    min-width: 20vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.exSTable{
+    background-color: transparent;
+    border:1px solid aquamarine;
+}
+.exSBlock{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 1vh;
+    text-align: center;
+    background-color: #c1c1c1;
+    box-shadow: 20px 20px 60px #00000041,inset -20px -20px 60px #ffffff40;
+}
+.exOwnTable{
+    font-size: 7rem;
+    border-radius: 1vh;
+    text-align: center;
+    height: 17vh;
+    width: 17vh;
+    border:1px solid aquamarine;
+    background-color: #c1c1c1;
+    box-shadow: 20px 20px 60px #00000041,inset -20px -20px 60px #ffffff40;
+}
+#tutorial{
+    display: inline;
+    background-color: #dda90c;
+    border: 1vh rgb(255, 111, 0) dashed;
+    border-radius: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 5px 5px 3px rebeccapurple;
+    width: 14vh;
+    font-stretch: expanded;   
+}
+a:link{
+    text-decoration: none;
+    color: green;
+}
+a:visited{
+    text-decoration: none;
+    color:bisque
+}
+#secondPage{
+    margin-top: 10px;
+    border: 2px salmon dotted;
+    background-color: cadetblue;
+    color:chartreuse;
+    border-radius: 2rem;
+    display: inline;
+}
+/* all in first page ends here */
+#inputPage{
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width:100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E201E;
+}
+#inputForm{
+    display: flex;
+    flex-direction: column;
+    background-color: #3c3d3795;
+    color: #3c3d3743;
+    padding: 2vh;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 5vh;
+    box-shadow: 10px 10px 30px #9f9797a9, -10px -10px 30px #ffffff40;
+}
+#submitInfo{
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    visibility: hidden;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 1rem;
+    color: #1E201E;
+    background-color: #dda90c;
+    align-self: center;
+}
+#inputForm:hover{
+    color: #fff;
+    background-color: #3c3d37;
+    box-shadow: 20px 20px 60px #9f9797a9, -20px -20px 60px #ffffff40;
+    transition: all ease-in-out 1s;
+}
+#plInfo{
+    font-style:italic;
+    background-color: beige;
+    border-radius: 2rem;
+    padding: 2px;
+    color: #000;
+    font-weight: bolder;
+}
+label{
+    font-size: 0.75rem;
+}
+/* all in second page ends here */
+#mainPage{
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width:100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    overflow: hidden;
+}
+#nameShower{
+    position: fixed;
+    top: 5vh;
+    border-radius: 2vh;
+    padding: 0.5vh;
+    padding-left: 2vh;
+    padding-right: 2vhs;
+    font-size: 3vh;
+    background-color: white;
+}
+#neonBlock{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: conic-gradient(from var(--gradient-angle),#ff0000,#ff7300,#fffb00,#48ff00,#00ffd5,#002bff,#ff00c8,#ff0000);
+    border-radius: 5vh;
+    width: 80vh;
+    height: 80vh;
+    filter: blur(1.5rem);
+    animation: rotation 5s linear infinite;
+}
+@property --gradient-angle{
+    syntax: "<angle>";
+    initial-value: 0deg; 
+    inherits: false;
+}
+@keyframes rotation {
+    0%{--gradient-angle:0deg;}
+    100%{--gradient-angle:360deg;}
+}
+#holdingBlock{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    padding: 1px;
+    border: none;
+    outline: none;
+    color: #000;
+    background-color: #161616;
+    cursor: pointer;
+    z-index: 0;
+    width: 79vh;
+    height: 79vh;
+    border-radius: 5vh;
+}
+#MTable{
+    border:0px #c1c1c1 solid;
+    border-radius: 1vh;
+}
+.MBlock{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center; 
+    height: 18vh;
+    width: 18vh;
+    border-radius: 1vh;
+    margin: 1.5vh;
+}
+.STable{
+    position: absolute;
+    z-index: 0;
+    height: 18vh;
+    width: 18vh;
+    margin: 1vh;
+    display:flex;
+    background-color: #161616;
+    justify-content: center;
+    align-items: center;
+}
+tbody{
+    background-color: transparent;
+    padding-left: 0;
+    margin-right: 0;
+}
+.SBlock{
+    height: 5.5vh;
+    width: 5.5vh;
+    margin: 2vh;
+    border-radius: 1vh;
+    color: #fff;
+    font-size: 4.5vh;
+    text-shadow: 0 0 0.5vh #fff,
+    0 0 1vh #fff, 0 0 3vh #0073e6,
+    0 0 3.5vh #0073e6, 0 0 4vh #0073e6,
+    0 0 4.5vh #0073e6, 0 0 5vh #0073e6;
+    text-align: center;
+    user-select: none;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur;
+}
+#tempTable{
+    position: absolute;
+    z-index: -10; 
+}
+.tempBlock{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center; 
+    height: 19vh;
+    width: 19vh;
+    border-radius: 1vh;
+    margin: 1.12vh;
+    animation: rotation 4s linear infinite;
+}
+.access{
+    background-image: conic-gradient(from var(--gradient-angle),transparent,white); 
+}
+.ownedBlock{
+    position: absolute;
+    z-index: -10;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    width: 18vh;
+    border-radius: 1vh;
+    color: #fff;
+    font-size: 12vh;
+    text-shadow: 0 0 0.5vh #fff,
+    0 0 1vh #fff, 0 0 3vh #0073e6,
+    0 0 3.5vh #0073e6, 0 0 4vh #0073e6,
+    0 0 4.5vh #0073e6, 0 0 5vh #0073e6;
+    gap: 0.8vh;
+    background-color: rgba(255,255,255,0.1);
+}
+#endGame{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    transition: all 2s ease-in-out 0.5s;
+}
+#winner{
+    display: block;
+    background-color: rgb(199, 146, 61);
+    border-radius: 1vh;
+    margin-bottom: 10vh;
+    font-size: 5vh;
+}
+#replay{
+    display: block;
+    border-radius: 1vh;
+    background-color: rgb(27, 146, 170);
+    font-size: 4vh;
+}
